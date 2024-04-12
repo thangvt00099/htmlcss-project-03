@@ -48,6 +48,22 @@ a {
 	cursor: pointer;
 }
 
+.section-heading {
+	color: #10375C;
+	font-size: 5rem;
+	font-weight: 600;
+	line-height: 1.2; /* 120% */
+	letter-spacing: -0.02em;
+}
+
+.section-desc {
+	margin-top: 18px;
+	font-size: 1.8rem;
+	font-weight: 300;
+	line-height: 1.6; /* 166.667% */
+	color: #575F66;
+}
+
 
 /* Header */
 .header {
@@ -160,6 +176,7 @@ a {
 	display: flex;
 	align-items: center;
 	margin-top: 76px;
+	padding-bottom: 110px;
 }
 
 .hero__content {
@@ -222,4 +239,72 @@ a {
 	width: 210px;
 	height: 410px;
 }
+
+/* Services */
+.service {
+	padding: 170px 0;
+}
+
+.service__heading,
+.service__desc {
+	text-align: center;
+}
+
+.service__desc {
+	width: 468px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.service__row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 70px;
+}
+
+.service__img {
+	width: 570px;
+	height: 570px;
+	border-radius: 12px;
+	object-fit: cover;
+}
+
+.service__list {
+	margin-bottom: 55px;
+}
+
+.service-item {
+	display: flex;
+	padding: 22px;
+	width: 470px;
+	border-radius: 10px;
+	background: #FFF;
+	transition: 0.25s;
+}
+
+.service-item:hover {
+	position: relative;
+	box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+
+.service-item__body {
+	margin-left: 19px;
+}
+
+.service-item__heading {
+	color: #10375C;
+	font-size: 1.8rem;
+	line-height: 1.2;
+	font-weight: 600;
+}
+
+.service-item__desc {
+	margin-top: 8px;
+	color: #575F66;
+	font-size: 1.6rem;
+	font-weight: 300;
+	line-height: 1.75; /* 175% */
+}
+
 

@@ -20,6 +20,11 @@ a {
 	text-decoration: none;
 }
 
+input, textarea, select, button {
+	font-family: inherit;
+	font-size: inherit;
+}
+
 .container {
 	width: 1170px;
 	max-width: calc(100% - 48px);
@@ -136,6 +141,7 @@ a {
 
 .logo__brand {
 	display: block;
+	font-family: "Sora", sans-serif;
 	font-size: 1.8em;
 	font-weight: 400;
 	color: #fff;
@@ -632,6 +638,10 @@ a {
 }
 
 /* Appointment */
+.appointment {
+	margin-bottom: 170px;
+}
+
 .appointment__inner {
 	padding: 100px 179px;
 	text-align: center;
@@ -663,6 +673,126 @@ a {
 	font-size: 1.6rem;
 	line-height: 1.75; /* 175% */
 }
+
+/* Footer */
+.footer {
+	padding-top: 100px;
+	background: #10375C;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.footer__row {
+	display: grid;
+	grid-template-columns: 1fr repeat(2, 0.4fr) 1fr;
+	column-gap: 78px;
+}
+
+.footer__desc {
+	margin-top: 22px;
+	color: #A9B3BB;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.75; /* 175% */
+}
+
+.footer__heading {
+	margin-bottom: 20px;
+	color: #FFF;
+	font-size: 1.6rem;
+	font-weight: 600;
+	line-height: 1.75; /* 175% */
+}
+
+.footer__list {
+	margin-bottom: 28px;
+}
+
+.footer__item {
+	margin-bottom: 10px;
+}
+
+.footer__link {
+	color: #A9B3BB;
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.8; /* 185.714% */
+	white-space: nowrap;
+}
+
+.footer__link:hover {
+	text-decoration: underline;
+}
+
+.footer__social {
+	display: flex;
+	column-gap: 10px;
+}
+
+.footer__social-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 28px;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	color: #2E80CE;
+	background: #fff;
+	transition: 0.25s;
+}
+
+.footer__social-btn:hover {
+	color: #fff;
+	background: #2E80CE;
+}
+
+.footer__form {
+	display: flex;
+	margin-top: 10px;
+}
+
+.footer-form__input {
+	width: 212px;
+	height: 46px;
+	padding: 0 10px;
+	border-radius: 4px;
+	outline: none;
+	border: 1px solid #406181;
+	background: transparent;	
+}
+
+.footer-form__input::placeholder {
+	color: #9CA8B1;
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.86; /* 185.714% */
+}
+
+.footer-form__submit {
+	--height: 46px;
+
+	margin-left: 10px;
+	min-width: 108px;
+	border-radius: 4px;
+	background: #2E80CE;
+	color: #FFF;
+	font-size: 1.4rem;
+}
+
+.footer__copyright {
+	padding: 28px 0 42px;
+	border-top: 1px solid #406181;
+}
+
+.footer__copyright-text {
+	color: #AAB3BA;
+	text-align: center;
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.86; /* 185.714% */
+}
+
+
 
 
 

@@ -1,15 +1,35 @@
-// Truy cập Parent, Child, Siblings
-let elm = document.querySelector(".hero__content");
+// append, prepend - phương thức dùng thêm 1 hoặc nhiều phần tử con vào phần tử cha
 
-// Truy cập vào phần tử Parent - duy nhất
-console.log(elm.parentElement);
-// elm.parentElement.style.backgroundColor = "red";
+// create Element
+const newImg = document.createElement("img");
+console.log(newImg);
 
-// Truy cập phần tử Child - trả về HTMLCollection
-console.log(elm.children)
+// Kiểm tra toàn bộ thuộc tính và phương thức của element
+console.dir(newImg);
 
-// Truy cập Siblings (anh em) kế tiếp
-console.log(elm.children[1].nextElementSibling);
+// setAttribute
+newImg.setAttribute("src", "./assets/img/most_slide_2.jpg");
 
-// Truy cập Siblings (anh em) trước nó
-console.log(elm.children[1].previousElementSibling);
+// Thêm vào cuối body - append
+document.body.append(newImg);
+newImg.style.width = "100%";
+
+const newText = document.createElement("p");
+newText.textContent = "Xin chào, em đang học JS";
+document.body.append(newText);
+
+const p = document.querySelector(".hero__desc");
+p.append("Sông cầu nước chảy lơ thơ, có đôi trai gái ngồi hơ quần đùi");
+
+// Thêm nhiều phần tử
+let elm1 = document.createElement("p");
+elm1.textContent = "Đây là đoạn văn mới thêm";
+
+let elm2 = document.createElement("span")
+elm2.textContent = "Đây là thẻ span";
+
+let container = document.querySelector(".hero__heading");
+container.append(elm1, elm2);
+
+// Prepend - thêm vào đầu
+container.prepend("Hi !");
